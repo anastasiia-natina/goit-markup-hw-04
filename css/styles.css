@@ -374,7 +374,6 @@ img {
 .customer-logo-link:focus {
   border-color: #404bbf;
   color: #404bbf;
-  transition: transform var(--transition-dur-and-func);
 }
 .customer-icon {
   fill: currentColor;
@@ -521,8 +520,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 32px;
   color: var(--color-hover);
+  padding: 40px 32px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -551,6 +550,10 @@ img {
 .proposition-link:hover,
 .proposition-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.proposition-link:hover .overlay,
+.proposition-link:focus .overlay {
+  transform: translateY(0%);
 }
 .proposition-list {
   display: flex;
@@ -623,6 +626,7 @@ img {
 .close-btn:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 .close-btn-icon {
   position: absolute;
@@ -631,8 +635,8 @@ img {
   fill: #2e2f42;
   transition: fill var(--transition-dur-and-func);
 }
-.close-btn-icon:hover,
-.close-btn-icon:focus {
+.close-btn:hover .close-btn-icon,
+.close-btn:focus .close-btn-icon {
   fill: #ffffff;
 }
 
