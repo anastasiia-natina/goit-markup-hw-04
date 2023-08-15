@@ -439,7 +439,8 @@ img {
   transition: background-color var(--transition-dur-and-func);
 }
 .social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.social-list-link-footer:focus,
+.social-list-link-footer:active {
   background-color: #31d0aa;
 }
 .social-list-icon-footer {
@@ -526,7 +527,6 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  padding: 40px 32px 164px 32px;
   border: 1px solid var(--color-hover);
   background-color: var(--accent-color);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
