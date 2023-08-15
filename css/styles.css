@@ -107,6 +107,9 @@ img {
 .current {
   color: var(--color-text);
 }
+.current-link {
+  color: #404bbf;
+}
 .current-link::after {
   content: '';
   position: absolute;
